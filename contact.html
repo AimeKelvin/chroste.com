@@ -52,29 +52,30 @@
     <div id="emailHelp" class="form-text">Contact us, Niba ushaka gukorana natwe, Twandikire.</div>
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Your Full name</label>
-      <input type="text" name="Full names" class="form-control form-control-lg bg-gray-800 border-dark" aria-describedby="emailHelp">
+      <input type="text" name="Full names" class="form-control required form-control-lg bg-gray-800 border-dark" aria-describedby="emailHelp">
     </div>
 
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Name of your Business (optional) </label>
-      <input type="text" name="Business name" class="form-control form-control-lg bg-gray-800 border-dark" aria-describedby="emailHelp">
+      <input type="text" name="Business name" required class="form-control form-control-lg bg-gray-800 border-dark" aria-describedby="emailHelp">
     </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" name="email" class="form-control form-control-lg bg-gray-800 border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" name="email" required class="form-control form-control-lg bg-gray-800 border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
   
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Message</label>
-    <textarea name="message" class="form-control form-control-lg bg-gray-800 border-dark" id="exampleInputPassword1"></textarea>
+    <textarea name="message" required class="form-control form-control-lg bg-gray-800 border-dark" id="exampleInputPassword1"></textarea>
   </div>
   <div class="mb-3 form-check py-3">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
     <label class="form-check-label" for="exampleCheck1"><a href="Terms and Conditions.html" target="_blank" class="legal">Terms & Conditions</a></label>
   </div>
-  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
   <button type="submit" class="btn btn-white btn-xl mb-4">Send</button>
+  <input type="hidden" name="redirect" value="https://chroste.com"
 </div>
 </form>
 
@@ -85,5 +86,7 @@
           
         </div>
 
-      </div></body>
+      </div>
+     
+    </body>
     </html>
